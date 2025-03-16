@@ -1,6 +1,6 @@
 {
   "name": "mmm-nouncilvotes",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A MagicMirror module to display Nouncil voting participation data",
   "main": "MMM-NouncilVotes.js",
   "scripts": {
