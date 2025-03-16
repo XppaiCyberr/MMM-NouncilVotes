@@ -2,6 +2,8 @@
 
 A MagicMirror module that displays Nouncil voting participation data in a clean, informative interface.
 
+![demo](demo.png)
+
 ## Features
 
 - Real-time Nouncil voting participation tracking
