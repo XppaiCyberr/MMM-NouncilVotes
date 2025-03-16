@@ -1,0 +1,225 @@
+.mmm-nouncilvotes {
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto;
+    font-family: 'Roboto Condensed', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+    color: #eee;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    font-size: 0.9em;
+}
+
+/* Header styling */
+.mmm-nouncilvotes .module-header {
+    font-size: 1em;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #fff;
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+}
+
+/* Table container with scrolling ability if needed */
+.mmm-nouncilvotes .table-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+.mmm-nouncilvotes table {
+    width: 100%;
+    border-spacing: 0;
+    border-collapse: separate;
+    table-layout: fixed;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Header cells */
+.mmm-nouncilvotes th {
+    text-align: left;
+    padding: 8px 10px;
+    background-color: rgba(30, 30, 30, 0.7);
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.7em;
+    letter-spacing: 1px;
+    color: #fff;
+    border-bottom: 2px solid #444;
+}
+
+.mmm-nouncilvotes th:first-child {
+    width: 50%;  /* Username column takes half the space */
+    border-top-left-radius: 8px;
+}
+
+.mmm-nouncilvotes th:nth-child(2) {
+    width: 20%;  /* Votes column takes 20% space */
+    text-align: center;
+}
+
+.mmm-nouncilvotes th:last-child {
+    width: 30%;  /* Participation column takes 30% space */
+    border-top-right-radius: 8px;
+}
+
+/* Table cells */
+.mmm-nouncilvotes td {
+    padding: 6px 10px;
+    vertical-align: middle;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    transition: background-color 0.3s ease;
+    font-size: 0.75em;
+}
+
+.mmm-nouncilvotes .align-left {
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Row styling */
+.mmm-nouncilvotes tr {
+    transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.mmm-nouncilvotes tbody tr:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.mmm-nouncilvotes tbody tr:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+    transform: translateX(5px);
+}
+
+/* Top voters highlight */
+.mmm-nouncilvotes .top-voter {
+    font-weight: bold;
+}
+
+.mmm-nouncilvotes .rank-1 {
+    background-color: rgba(218, 165, 32, 0.2) !important; /* Gold */
+}
+
+.mmm-nouncilvotes .rank-2 {
+    background-color: rgba(192, 192, 192, 0.2) !important; /* Silver */
+}
+
+.mmm-nouncilvotes .rank-3 {
+    background-color: rgba(205, 127, 50, 0.2) !important; /* Bronze */
+}
+
+/* Rank number styling */
+.mmm-nouncilvotes .rank {
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+/* Twitter handle styling */
+.mmm-nouncilvotes .twitter {
+    color: #1DA1F2;
+    opacity: 0.8;
+    font-size: 0.8em;
+}
+
+/* Progress bar styling */
+.mmm-nouncilvotes .progress-bar {
+    height: 4px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 3px;
+    margin-top: 3px;
+    overflow: hidden;
+}
+
+.mmm-nouncilvotes .progress-fill {
+    height: 100%;
+    border-radius: 3px;
+    transition: width 1s ease-in-out;
+}
+
+.mmm-nouncilvotes .high-participation {
+    background: linear-gradient(to right, #4CAF50, #8BC34A);
+}
+
+.mmm-nouncilvotes .medium-participation {
+    background: linear-gradient(to right, #FFC107, #FFEB3B);
+}
+
+.mmm-nouncilvotes .low-participation {
+    background: linear-gradient(to right, #FF5722, #F44336);
+}
+
+/* Pagination indicator */
+.mmm-nouncilvotes .pagination {
+    text-align: center;
+    margin-top: 6px;
+    font-size: 0.7em;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Last updated timestamp */
+.mmm-nouncilvotes .last-updated {
+    text-align: right;
+    margin-top: 6px;
+    font-size: 0.7em;
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+/* Loading screen */
+.mmm-nouncilvotes .loading-container {
+    text-align: center;
+    padding: 12px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.mmm-nouncilvotes .loading-spinner {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    border-top-color: #fff;
+    animation: spin 1s ease-in-out infinite;
+    margin-bottom: 6px;
+}
+
+.mmm-nouncilvotes .loading-text {
+    font-style: italic;
+    font-size: 0.8em;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+/* Animation for page transitions */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.mmm-nouncilvotes tbody tr {
+    animation: fadeIn 0.5s ease-out forwards;
+}
+
+/* Staggered animation for rows */
+.mmm-nouncilvotes tbody tr:nth-child(1) { animation-delay: 0.05s; }
+.mmm-nouncilvotes tbody tr:nth-child(2) { animation-delay: 0.1s; }
+.mmm-nouncilvotes tbody tr:nth-child(3) { animation-delay: 0.15s; }
+.mmm-nouncilvotes tbody tr:nth-child(4) { animation-delay: 0.2s; }
+.mmm-nouncilvotes tbody tr:nth-child(5) { animation-delay: 0.25s; }
+.mmm-nouncilvotes tbody tr:nth-child(6) { animation-delay: 0.3s; }
+.mmm-nouncilvotes tbody tr:nth-child(7) { animation-delay: 0.35s; }
+.mmm-nouncilvotes tbody tr:nth-child(8) { animation-delay: 0.4s; }
+.mmm-nouncilvotes tbody tr:nth-child(9) { animation-delay: 0.45s; }
+.mmm-nouncilvotes tbody tr:nth-child(10) { animation-delay: 0.5s; }
+
+/* Smooth transition for page changes */
+.mmm-nouncilvotes.mm-animate {
+    transition: opacity 0.5s ease-in-out;
+}
