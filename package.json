@@ -1,0 +1,27 @@
+{
+  "name": "mmm-nouncilvotes",
+  "version": "1.0.0",
+  "description": "A MagicMirror module to display Nouncil voting participation data",
+  "main": "MMM-NouncilVotes.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "magicmirror",
+    "module",
+    "nouncil",
+    "voting",
+    "participation"
+  ],
+  "author": "XppaiCyber",
+  "license": "MIT",
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/XppaiCyberr/MMM-NouncilVotes.git"
+  },
+  "bugs": {
+    "url": "https://github.com/XppaiCyberr/MMM-NouncilVotes/issues"
+  },
+  "homepage": "https://github.com/XppaiCyberr/MMM-NouncilVotes#readme"
+} 
