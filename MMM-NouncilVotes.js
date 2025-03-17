@@ -39,7 +39,7 @@ Module.register("MMM-NouncilVotes", {
         // Header
         const header = document.createElement("div");
         header.className = "module-header";
-        header.innerHTML = "Nouncil Voting Participation";
+        header.innerHTML = "⌐◨-◨ Nouncil Voting Participation";
         wrapper.appendChild(header);
 
         // Container for the table
